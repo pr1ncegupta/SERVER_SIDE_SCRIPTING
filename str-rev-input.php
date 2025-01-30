@@ -1,5 +1,7 @@
 <?php
-$text = "madam"; // Change this value to test with different strings
+
+echo("Enter the text to Rev and Check Palindrome: ");
+$text = (string) trim(fgets(STDIN)); 
 
 function isPalindrome($str) {
     return (strcasecmp($str, strrev($str)) == 0);
